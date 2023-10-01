@@ -1,6 +1,11 @@
-html{
-    font-size: 62,5%;
-}
+:root {
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --dery-blue:hsl(225, 100%, 98%);
+    --desaturated-blue:hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+    }
+
 
 body {
     font-family: 'Red Hat Display', sans-serif;
@@ -12,12 +17,24 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .container .painel {
-    background-color: var(#ffffff);
-    height: 350px;
-    width: 350px;
+    background-color:var(--dery-blue);
+    height: 450px;
+    width: 300px;
     
 }
+
+.container .painel img {
+    max-width: 100%;
+
+}
+
+
+
+
+
