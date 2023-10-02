@@ -1,18 +1,12 @@
-:root {
-    --pale-blue:hsl(225, 100%, 94%);
-    --bright-blue:hsl(245, 75%, 52%);
-    --dery-blue:hsl(225, 100%, 98%);
-    --desaturated-blue:hsl(224, 23%, 55%);
-    --dark-blue:hsl(223, 47%, 23%);
-    }
-
-
 body {
     font-family: 'Red Hat Display', sans-serif;
-    background-color: var(--dark-blue);
+    background: url(../images/pattern-background-desktop.svg) no-repeat;
+    background-color: var(--pale-blue);
+    background-position-y:-100px ;
     
-
 }
+
+
 
 .container {
     display: flex;
@@ -25,23 +19,107 @@ body {
 .container .painel {
     background-color:var(--dery-blue);
     height: 530px;
-    width: 300px;
+    max-width: 350px;    
     text-align: center;
-    border-radius: 15px;
-    overflow: hidden;  
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .painel img {
+    max-width: 100%;
+}
+
+.container .painel h1 {
+    font-size: 28px;
+    font-weight:900;
+    margin-top: 20px;
+    color: var(--dark-blue);
+}
+
+.container .painel .paragrafo{
+    font-size: 15px;
+    color: var(--desaturated-blue);
+    padding-top: 10px;
+    font-weight: 500;
 }
 
 .container-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
-    padding: 20px;
+    background-color:var(--pale-blue);
+    padding:7px 10px;
+    margin:20px 30px;
+    border-radius: 10px;
 }
 
 .painel-inf {
-    display: flex;
-    gap: 10px;
+    display: flex; 
+    
+}
+
+.painel-inf .icone-musica {
+    margin: 3px 3px 3px 1px;
+    height: 35px;
+    padding-right: 15px;
+}
+
+.painel-inf  .inf h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container-info .painel-inf  .inf span {
+    font-size: 13px;
+    font-weight:500;
+    color: var(--desaturated-blue);
+}
+
+.container-info a {
+    font-size: 13.5px;
+    font-weight: 900;
+    color: var(--bright-blue);
+}
+
+.container-info a:hover {
+    color: var(--bright-blue);
+    transition: 0.4s ease-in-out;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.container .painel .btn button {
+    font-size:13px;
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: var(--bright-blue);
+    border: none;
+    color: var(--dery-blue);
+    font-weight:700;
+    margin: 5px 0px 25px 0px;
+}
+
+.container .painel .btn button:hover {
+    opacity: 0.7;
+    transition: 0.5 ease-in-out;
+    cursor: pointer;
+}
+
+.container .painel .cancelar {
+    font-size: 13px;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.container .painel .cancelar:hover {
+    color: #000000;
+    font-weight: 900;
+}
+
+.attribution {
+    margin-top: -30px;
 }
 
 
@@ -54,9 +132,11 @@ body {
 
 
 
-.container .painel img {
-    max-width: 100%;
-}
+
+
+
+
+
 
 
 
